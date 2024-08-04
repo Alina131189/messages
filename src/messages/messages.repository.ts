@@ -31,6 +31,6 @@ export class MessagesRepository {
     messages[id] = { id, content };
 
     // Here we turn the whole object into a string
-    await writeFile('message.json', JSON.stringify(messages));
+    await writeFile('messages.json', JSON.stringify(messages));
   }
 }
